@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/all.main.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Mandreen</title>
+</head>
+
+<body>
+  <!-- start navbar -->
+
+  <nav class="navbar navbar-expand-lg m-0">
+    <div class="container-fluid">
+      <!-- زر المينيو في الشاشات الصغيرة -->
+     
+
+      <!-- اللوجو -->
+      <a class="navbar-brand" href="#">
+        <img src="./images/logo.png" alt="">
+      </a>
+ <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
+        <img src="./images/textalign-justifyright.svg" alt="">
+      </button>
+<div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav me-auto mb-2 pt-lg-0 pt-md-5 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#"><img src="./images/profile-circle.svg" alt=""></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img src="./images/heart.svg" alt=""></a></li>
+          <li class="nav-item"><a class="nav-link" href="#"><img src="./images/shopping-cart.svg" alt=""></a></li>
+        </ul>
+      </div>
+      
+    </div>
+  </nav>
+  <!-- end navbar -->
+  <!-- start hero section -->
+  <div class="hero_sec lap">
+    <img src="./images/mainImg.svg" alt="">
+  </div>
+  <div class="hero_sec mobile d-none">
+    <img src="./images/mainBgMobile.png" alt="">
+  </div>
+  <div class="text-center position_fixed m-auto">
+  <button class="fixed_btn btn">
+        <img src="./images/shopping-bag.svg" alt="" srcset="">
+
+    <span>احم قدمك الآن</span> 
+
+  </button>
+
+  </div>
+  <!-- end hero section -->
+  <!-- start diagram -->
+
+<div class="digram_sec lap_mode">
+    <img src="./images/digramLap.webp" alt="">
+</div>
+<div class="digram_sec mobile_mode d-none">
+    <img src="./images/digramMobile.webp" alt="">
+</div>
+
+  <!-- end diagram -->
+  <!-- start diagram in mobile -->
+
+
+  <!-- end diagram -->
+  <!-- start product sec -->
+  <div class="container-fluid my-lg-4 my-3 product">
+      <div class="d-flex justify-content-between align-items-center top-card ps-0">
+        <h2 class="product-title lap">نعل داخلي مخصص لمرضي السكري</h2>
+        <div>
+          <span class="badge-free">شحن مجاني</span>
+          <span style="font-size:20px;cursor:pointer;"><img src="./images/orngheart.svg" alt=""></span>
+        </div>
+
+      </div>
+    <div class="product-card row align-items-start">
+
+
+      <!-- تفاصيل المنتج -->
+    
+      <div class="col-md-7">
+
+        <h2 class="product-title mobile d-none">نعل داخلي مخصص لمرضي السكري</h2>
+
+        <div class="price mb-2">699 ريال</div>
+
+        <div>
+          <span class="product_no">رمز المنتج:Z.725516.30386200000000186817</span>
+          <span class="rate_stars">★★★★★</span>
+        </div>
+         
+        <p class="text-muted">
+          مصنوع يدويا في بولندا. معتمد أورويبا يوفر راحة و حماية مثالية لمرضى السكري آلام القدم ضعف الدورة
+          <br>الدموية مناسب للمشي و الوقوف الطويل.<a href="">المزيد من المعلومات </a>
+        </p>
+
+        <h6>مقاس النعل</h6>
+        <div class="d-flex flex-wrap mb-3">
+          <span class="size-btn active me-0">36</span>
+          <span class="size-btn">37</span>
+          <span class="size-btn">38</span>
+          <span class="size-btn">39</span>
+          <span class="size-btn">40</span>
+          <span class="size-btn">41</span>
+          <span class="size-btn">42</span>
+          <span class="size-btn">43</span>
+          <span class="size-btn">44</span>
+          <span class="size-btn">45</span>
+          <span class="size-btn">46</span>
+        </div>
+        <div class="qty">
+          <span class="qty-title">الكمية</span>
+          <div class="number-input me-2">
+            <button onclick="decrement(this)">
+              <i class="fa-solid fa-minus"></i>
+            </button>
+            <input type="number" value="1" min="1">
+            <button onclick="increment(this)">
+              <i class="fa-solid fa-plus"></i>
+            </button>
+
+          </div>
+        </div>
+
+
+        <div class="d-flex gap-3">
+          <button class="btn-cart">
+            <img src="./images/shopping-cart2.svg" alt="" srcset="">
+
+            <span>إضافة للسلة</span>
+
+          </button>
+          <button class="btn-buy">
+            <img src="./images/shopping-bag.svg" alt="">
+
+            <span>احم قدمك الآن</span>
+
+          </button>
+
+        </div>
+      </div>
+
+      <!-- صور المنتج -->
+      <div class="col-md-5 text-center">
+        <img id="main-img" src="./images/product1.png" class="img-fluid mb-3" alt="منتج">
+        <div class="thumbs d-flex justify-content-center gap-2">
+          <img src="./images/product1.png" class="active" width="70">
+          <img src="./images/product2.png" width="70">
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+   
+  </div>
+   <!-- product more info -->
+    <div class="my-5 container-fluid more_info">
+      <h2>وصف المنتج</h2>
+
+      <div class="accordion" id="productAccordion">
+        <!-- الفوائد و المواصفات -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseOne">
+              الفوائد و المواصفات
+              <img src="./images/arrow-down.svg" class="arrow">
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+            <div class="accordion-body">
+              يخفف آلام القدم لمرضى السكري بفضل تصميم متعدد الطبقات يوزع الضغط بشكل متوازن.
+              <br>
+              يقلل التقرحات والالتهابات باستخدام مواد مرنة تمتص الصدمات وتحاكي أنسجة القدم
+              <br>
+              يمنح راحة مثالية أثناء المشي بفضل طبقة وسطى ناعمة تقلل الضغط على المناطق الحساسة
+              <br>
+              يحافظ على شكل القدم أثناء الحركة من خلال طبقة سفلية داعمة.
+              <br>
+              يتميز بمظهر أنيق وملمس مريح مع غطاء علوي من الجلد النباتي عالي الجودة.
+            </div>
+          </div>
+        </div>
+
+        <!-- ماهي الاحذية المناسبة لهذا النعل -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo">
+              ماهي الاحذية المناسبة لهذا النعل
+              <img src="./images/arrow-down.svg" class="arrow">
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+            <div class="accordion-body">
+              النعل يتميز بتوسيد عالي ويأخذ مساحة إضافية داخل الحذاء.
+              <br>
+              يُنصح باستخدامه فقط مع الأحذية التي يمكن إزالة النعل الأصلي منها واستبداله.
+              <br>
+              يجب أن يكون الحذاء عميقًا ليمنح النعل والقدم مساحة مريحة.
+              <br>
+              غير مناسب للأحذية الضيقة أو الأحذية ذات التصميم الداخلي الصلب.
+              <br>
+            </div>
+          </div>
+        </div>
+
+        <!-- كيف أحدد المقاس المناسب لي؟ -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree">
+              كيف أحدد المقاس المناسب لي؟
+              <img src="./images/arrow-down.svg" class="arrow">
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+            <div class="accordion-body">
+              النعل متوفر بعدة مقاسات اختر نفس مقاس حذائك المعتاد
+            </div>
+          </div>
+        </div>
+
+        <!-- الاعتناء بالنعل -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour">
+              الإعتناء بالنعل
+              <img src="./images/arrow-down.svg" class="arrow">
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+            <div class="accordion-body">
+              لا تغسل النعل في الغسالة.
+              <br>
+              امسحه بقطعة قماش مبللة، ثم اتركه ليجف في الهواء.
+              <br>
+              احتفظ به بعيدًا عن مصادر الحرارة المباشرة مثل الشمس أو الموقد.
+
+                        </div>
+          </div>
+        </div>
+
+        <!-- مما يصنع هذا النعل -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFive">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFive">
+              مما يصنع هذا النعل
+              <img src="./images/arrow-down.svg" class="arrow">
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+            <div class="accordion-body">
+              النعل مصنوع يدويًا في بولندا من خامات أوروبية عالية الجودة، مع طبقات مخصّصة لامتصاص الصدمات وتقليل الاحتكاك، وطبقة سطحية ناعمة ولطيفة على الجلد.
+
+ 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- end product sec -->
+  <!-- start faq sec -->
+  <section class="faq-section">
+    <div class="container-fluid">
+      <h2>أبرز الاسئلة الشائعة</h2>
+      <p>نرجو التوصل معنا عبر الواتسب لأي استفسار</p>
+      <div class="accordion row g-3 justify-content-center" id="faqAccordion">
+        <!-- سؤال 1 -->
+        <div class="col-md-6">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+                ما هي الفائدة الاساسية من استخدام هذا النعل الداخلي ؟
+              </button>
+            </h2>
+            <div id="q1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+النعل مخصّص لمرضى السكري، ولمن يعانون من آلام القدم أو حساسية باطن الرجل، كما يساعد في
+<br>
+تحسين الدورة الدموية. ويمكن لأي شخص يبحث عن راحة إضافية وحماية لقدميه استخدامه أيضًا.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- سؤال 2 -->
+        <div class="col-md-6">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+                لمن صمم هذا النعل الداخلي ؟
+              </button>
+            </h2>
+            <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                النعل يوزّع الضغط بالتساوي على باطن القدم، يقلّل من خطر التقرّحات والجروح، ويوفّر راحة أثناء المشي لفترات طويلة 
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- سؤال 3 -->
+          <div class="col-md-6">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q4">
+                هل النعل آمن لمرضى السكري ؟
+              </button>
+            </h2>
+            <div id="q4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                نعم , النعل معتمد طبياً و حاصل علي شهادات (CE, TÜV) الأوربية وصُمّم خصيصًا لتقليل المضاعفات
+                <br>
+                الشائعة لمرضى السكري مثل التقرحات أو الالتهابات الناتجة عن الضغط والاحتكاك.
+              </div>
+            </div>
+          </div>
+        </div>
+      
+
+        <!-- سؤال 4 -->
+         <div class="col-md-6">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+                كيف أحدد المقاس المناسب لي ؟
+              </button>
+            </h2>
+            <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+النعل متوفر بعدة مقاسات اختر نفس مقاس حذائك المعتاد
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- سؤال 5 -->
+       
+ <div class="col-md-6">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q6">
+                هل يناسب هذا النعل جميع أنواع الاحذية ؟
+              </button>
+            </h2>
+            <div id="q6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                النعل يتميز بتوسيد عالي ويأخذ مساحة إضافية داخل الحذاء، لذلك: 1- يُنصح باستخدامه فقط مع الأحذية التي تحتوي على نعل داخلي يمكن استبداله. 2- يجب أن يكون الحذاء ذا عمق إضافي ليعطي للنعل والقدم مساحة مريحة. 3- غير مناسب للأحذية الضيقة أو ذات التصميم الصلب من الداخل.
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- سؤال 6 -->
+          <div class="col-md-6">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q5">
+                كيف أعتني بالنعل ؟
+              </button>
+            </h2>
+            <div id="q5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+              <div class="accordion-body">
+                1- لا يُغسل في الغسالة 2- يُمسح بقطعة قماش مبللة ويُترك ليجف في الهواء 3- يُحفظ بعيدًا عن الحرارة المباشرة
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- end faq sec -->
+
+
+  <!-- start feature -->
+   <div class="container-fluid feature">
+    <h2 class="section-title">سلامتك أولويتنا وثقتك غايتنا</h2>
+    <div class="row g-4">
+      
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="feature-icon text-success">
+            <img src="./images/refresh-2.svg" alt="" srcset="">
+          </div>
+          <h5 class="feature-title">
+            ضمان  الاسترجاع
+          </h5>
+          <p class="mb-0">
+            إمكانية استرجاع المنتج خلال 14 يوم إذا لم يناسبك
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="feature-icon text-primary">
+            <img src="./images/security.svg" alt="" srcset="">
+          </div>
+          <h5 class="feature-title">أمان صحي</h5>
+          <p class="mb-0">معتمد ومسجل في الاتحاد الأوروبي</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="feature-box">
+          <div class="feature-icon text-info">
+            <img src="./images/medal.svg" alt="" srcset="">
+          </div>
+          <h5 class="feature-title">جودة مضمونة</h5>
+          <p class="mb-0">مصنوع يدويا من أجود المواد المعتمدة أوروبيا</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- end feature -->
+  <!-- start reviews sec -->
+  <div class="container-fluid rev">
+    <div class="reviews-section">
+      <h4 class="rev_title mb-4">التقيمات والمراجعات</h4>
+
+      <div class="d-flex justify-content-start align-items-baseline summary">
+        <!-- ملخص التقييمات -->
+        <div class="summary-box ms-1">
+          <h6>إجمالي التقيمات</h6>
+          <div class="d-flex align-items-baseline justify-content-start">
+            <span class="rev_range">5.0</span>
+            <div class="stars">
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+              <span>★</span>
+            </div>
+            <span class="rev_count">تقيم &nbsp (1)</span>
+          </div>
+
+
+        </div>
+        <!-- زر يسار -->
+
+        <!-- الكاروسيل -->
+        <div class="d-flex flex-grow-1 justify-content-start rev_mobile" style="overflow:hidden; max-width:100%;">
+          <div class="carousel" aria-label="reviews carousel">
+            <button id="prevBtn" class="carousel-btn prev" title="السابق">&#10094;</button>
+
+            <div class="viewport" aria-hidden="false">
+              <div id="visible"></div>
+            </div>
+
+            <button id="nextBtn" class="carousel-btn activBtn next" title="التالي">&#10095;</button>
+          </div>
+          <div class="d-none" id="allCards">
+
+            <!-- بطاقة التقييم 1 -->
+            <div class="review-card">
+              <div class="d-flex align-items-center mb-2">
+                <div class="circle">M</div>
+                <div>
+                  <strong>Musa</strong><br>
+                  <small class="text-muted">منذ 2 أيام</small>
+                </div>
+              </div>
+              <p>مريح جدا في المشي و الوقوف<br>نصح به بشدة</p>
+              <div class="stars">★★★★★</div>
+            </div>
+
+            <!-- بطاقة التقييم 2 -->
+            <div class="review-card">
+              <div class="d-flex align-items-center mb-2">
+                <div class="circle">M</div>
+                <div>
+                  <strong>Ahmed</strong><br>
+                  <small class="text-muted">منذ 2 أيام</small>
+                </div>
+              </div>
+              <p>مريح جدا في المشي و الوقوف<br>نصح به بشدة</p>
+              <div class="stars">★★★★★</div>
+            </div>
+
+
+
+            <!-- بطاقة التقييم 2 -->
+            <div class="review-card">
+              <div class="d-flex align-items-center mb-2">
+                <div class="circle">M</div>
+                <div>
+                  <strong>ALI</strong><br>
+                  <small class="text-muted">منذ 2 أيام</small>
+                </div>
+              </div>
+              <p>مريح جدا في المشي و الوقوف<br>نصح به بشدة</p>
+              <div class="stars">★★★★★</div>
+            </div>
+
+
+            <!-- بطاقة التقييم 2 -->
+            <div class="review-card">
+              <div class="d-flex align-items-center mb-2">
+                <div class="circle">M</div>
+                <div>
+                  <strong>Mona</strong><br>
+                  <small class="text-muted">منذ 2 أيام</small>
+                </div>
+              </div>
+              <p>مريح جدا في المشي و الوقوف<br>نصح به بشدة</p>
+              <div class="stars">★★★★★</div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- زر يمين -->
+
+
+      </div>
+
+
+
+      <!-- زر أضف تقييمك -->
+      <div class="add-review">+ أضف تقييمك</div>
+    </div>
+  </div>
+
+  <!-- end reviews sec -->
+  <footer>
+    <div class="row top_footer m-auto container-fluid p-0">
+      <div class="col-4 right_part">
+        <div class="logo">
+          <img src="./images/WhatsApp_Image_2025-09-21_at_19.50.19-removebg-preview 1.svg" alt="Mandreen Logo">
+        </div>
+        <p class="text-decoration-none">
+          شركة مندرين للتجارة الالكترونية متخصصة في النعل<br> الداخلي لمرضي السكري
+          (الشارقة - الامارات)<br> الرقم الضريبي: 10495753900001
+        </p>
+      </div>
+      <div class="col-4 mid_part">
+        <h4>روابط هامة</h4>
+        <ul>
+          <li><a href="">الشروط و الاحكام</a></li>
+          <li><a href="">سياسة الخصوصية</a></li>
+          <li><a href="">الاستبدال و الاسترجاع</a></li>
+          <li><a href="">من نحن</a></li>
+        </ul>
+      </div>
+      <div class="col-4 left_part">
+        <h4>روابط المساعدة</h4>
+        <ul>
+          <li><a href="">الاسئلة المتكررة</a></li>
+          <li><a href="">الشكاوى و الاقتراحات</a></li>
+          <li><a href="">الشحن و التوصيل</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="butm_footer container-fluid">
+      <div class="right_part">
+        حقوق النشر محفوظة لشركة مندرين
+      </div>
+      <ul class="left_part gateway mb-0">
+        <li><a href=""><img src="./images/applePay.svg" alt="Apple Pay"></a></li>
+        <li><a href=""><img src="./images/tmara.svg" alt="Tamara"></a></li>
+        <li><a href=""><img src="./images/visa.svg" alt="VISA"></a></li>
+        <li><a href=""><img src="./images/mada.svg" alt="Mada"></a></li>
+        <li><a href=""><img src="./images/mastercard.svg" alt="MasterCard"></a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
